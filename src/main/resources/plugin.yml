@@ -1,0 +1,4 @@
+name: CephiniaCore
+version: 1.0
+main: org.cephinia.core.Main
+author: Cephinia Development Team
