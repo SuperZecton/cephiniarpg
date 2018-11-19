@@ -2,7 +2,7 @@ package org.cephinia.core;
 
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.cephinia.core.listeners.WheatListener;
+import org.cephinia.core.modules.farming.WheatListener;
 
 public class Main extends JavaPlugin {
 
