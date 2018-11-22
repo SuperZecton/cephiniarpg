@@ -1,21 +1,16 @@
 package org.cephinia.core.events;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
 
 import org.cephinia.core.Main;
-import org.cephinia.core.utils.Utils;
+
 public class JoinListener implements Listener {
-    Main main = new Main();
-
-
 
 
     private Main plugin;
@@ -33,7 +28,7 @@ public class JoinListener implements Listener {
 
         //Defines Player
         Player p = e.getPlayer();
-        ItemStack item = main.getMagicalBook();
+        ItemStack item = plugin.getMagicalBook();
 
         if(p.getInventory().contains(item)) {
 
