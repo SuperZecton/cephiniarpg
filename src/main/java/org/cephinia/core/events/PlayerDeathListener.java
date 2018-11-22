@@ -1,4 +1,4 @@
-package org.cephinia.core.listeners;
+package org.cephinia.core.events;
 
 
 import org.bukkit.Bukkit;

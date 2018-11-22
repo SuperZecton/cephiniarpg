@@ -1,4 +1,4 @@
-package org.cephinia.core.listeners;
+package org.cephinia.core.events;
 
 
 import org.bukkit.Bukkit;
@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
 import org.cephinia.core.Main;
-import org.cephinia.core.modules.SkillGui;
+import org.cephinia.core.abilities.AbilityGui;
 import org.cephinia.core.utils.Utils;
 
 public class MenuListen implements Listener{
@@ -50,7 +50,7 @@ public class MenuListen implements Listener{
             if(p.hasPermission("GuiManager.item.use")) {
 
 
-                p.openInventory(SkillGui.GUI(p));
+                p.openInventory(AbilityGui.GUI(p));
             }
             else {
                 p.sendMessage(Utils.chat("&4You do not have permission to use the book!"));

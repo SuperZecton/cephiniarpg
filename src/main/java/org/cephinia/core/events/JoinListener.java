@@ -1,4 +1,4 @@
-package org.cephinia.core.listeners;
+package org.cephinia.core.events;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -9,9 +9,12 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+
 import org.cephinia.core.Main;
 import org.cephinia.core.utils.Utils;
 public class JoinListener implements Listener {
+    Main main = new Main();
+
 
 
 
@@ -27,13 +30,10 @@ public class JoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         //Makes the Item Book of Wisdom
-        ItemStack item = new ItemStack(Material.BOOK, 1);
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Utils.chat("&eMagical Book"));
-        item.setItemMeta(meta);
+
         //Defines Player
         Player p = e.getPlayer();
-
+        ItemStack item = main.getMagicalBook();
 
         if(p.getInventory().contains(item)) {
 
