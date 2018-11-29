@@ -29,7 +29,7 @@ public class PlayerDeathListener implements Listener{
     public void onPlayerDeath(PlayerDeathEvent e) {
         ItemStack item = new ItemStack(Material.BOOK, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Utils.chat("&eMagical Book"));
+        meta.setDisplayName(Utils.output("&eMagical Book"));
         item.setItemMeta(meta);
 
         e.getDrops().remove(item);
@@ -42,7 +42,7 @@ public class PlayerDeathListener implements Listener{
     public void onPlayerRespawn(PlayerRespawnEvent e) {
         ItemStack item = new ItemStack(Material.BOOK, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Utils.chat("&eMagical Book"));
+        meta.setDisplayName(Utils.output("&eMagical Book"));
         item.setItemMeta(meta);
 
         Player p = e.getPlayer();

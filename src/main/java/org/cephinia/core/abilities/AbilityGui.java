@@ -20,7 +20,7 @@ public class AbilityGui {
     public static int inv_rows = 9;
 
     public static void initialize() {
-        inventory_name = Utils.chat("&c&lMagical Book");
+        inventory_name = Utils.output("&c&lMagical Book");
         inv = Bukkit.createInventory(null, inv_rows);
     }
 
@@ -46,18 +46,18 @@ public class AbilityGui {
     }
 
     public static void clicked(Player player, int slot, ItemStack clicked, Inventory inv) {
-        if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cFireball"))) {
+        if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.output("&cFireball"))) {
 
             FireballSkill.doThrow(player.launchProjectile(Fireball.class), true, 3);
         }
 
-        else if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cDragonVortex"))){
-            player.sendMessage(Utils.chat("&aThis will be added in later"));
+        else if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.output("&cDragonVortex"))){
+            player.sendMessage(Utils.output("&aThis will be added in later"));
 
 
         }
 
-        else if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cTeleport"))){
+        else if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.output("&cTeleport"))){
             Location playerLocation = player.getLocation();
             Vector playerDirection = player.getLocation().getDirection();
             playerDirection.multiply(3);

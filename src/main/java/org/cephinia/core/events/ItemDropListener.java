@@ -24,7 +24,7 @@ public class ItemDropListener implements Listener{
     @EventHandler(ignoreCancelled=true)
 
     public void onDrop(PlayerDropItemEvent e){
-        if(e.getItemDrop().getItemStack().getType() == Material.BOOK && e.getItemDrop().getItemStack().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&eMagical Book"))){
+        if(e.getItemDrop().getItemStack().getType() == Material.BOOK && e.getItemDrop().getItemStack().getItemMeta().getDisplayName().equalsIgnoreCase(Utils.output("&eMagical Book"))){
 
             e.setCancelled(true);
         }

@@ -22,7 +22,7 @@ public class ItemBuilder {
 
     public ItemBuilder name(String name) {
         ItemMeta stackMeta = stack.getItemMeta();
-        stackMeta.setDisplayName(Utils.chat(name));
+        stackMeta.setDisplayName(Utils.output(name));
         stack.setItemMeta(stackMeta);
         return this;
     }
@@ -36,7 +36,7 @@ public class ItemBuilder {
 
     public ItemBuilder lore(String... lore) {
         for (int i = 0; i < lore.length; i++) {
-            lore[i] = Utils.chat(lore[i]);
+            lore[i] = Utils.output(lore[i]);
         }
 
         ItemMeta stackMeta = stack.getItemMeta();
@@ -48,7 +48,7 @@ public class ItemBuilder {
 
     public ItemBuilder lore(List<String> lore) {
         for (int i = 0; i < lore.size(); i++) {
-            lore.set(i, Utils.chat(lore.get(i)));
+            lore.set(i, Utils.output(lore.get(i)));
         }
 
         ItemMeta stackMeta = stack.getItemMeta();

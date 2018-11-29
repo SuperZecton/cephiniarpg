@@ -19,7 +19,7 @@ public class Main extends JavaPlugin {
     public ItemStack getMagicalBook(){
         ItemStack magicalBook = new ItemStack(Material.BOOK, 1);
         ItemMeta meta = magicalBook.getItemMeta();
-        meta.setDisplayName(Utils.chat("&eMagical Book"));
+        meta.setDisplayName(Utils.output("&eMagical Book"));
         magicalBook.setItemMeta(meta);
 
         return magicalBook;

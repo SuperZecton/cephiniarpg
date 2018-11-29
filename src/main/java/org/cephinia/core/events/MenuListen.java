@@ -42,7 +42,7 @@ public class MenuListen implements Listener{
         if (!iteminhand.hasItemMeta()) return;
 
 
-        if (!iteminhand.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&eMagical Book"))) return;
+        if (!iteminhand.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.output("&eMagical Book"))) return;
 
 
         if ((e.getAction() == Action.RIGHT_CLICK_AIR) || (e.getAction() == Action.RIGHT_CLICK_BLOCK)) {
@@ -53,7 +53,7 @@ public class MenuListen implements Listener{
                 p.openInventory(AbilityGui.GUI(p));
             }
             else {
-                p.sendMessage(Utils.chat("&4You do not have permission to use the book!"));
+                p.sendMessage(Utils.output("&4You do not have permission to use the book!"));
                 return;
             }
 
