@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="CephiniaCore:jar">
-    <output-path>$PROJECT_DIR$/../Plugins</output-path>
-    <root id="archive" name="CephiniaCore.jar">
-      <element id="module-output" name="CephiniaCore" />
-    </root>
-  </artifact>
-</component>
