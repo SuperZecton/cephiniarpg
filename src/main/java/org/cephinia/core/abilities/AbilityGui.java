@@ -48,7 +48,7 @@ public class AbilityGui {
     public static void clicked(Player player, int slot, ItemStack clicked, Inventory inv) {
         if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cFireball"))) {
 
-            fireballSkill.doThrow(player.launchProjectile(Fireball.class), true, 3);
+            FireballSkill.doThrow(player.launchProjectile(Fireball.class), true, 3);
         }
 
         else if(clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cDragonVortex"))){

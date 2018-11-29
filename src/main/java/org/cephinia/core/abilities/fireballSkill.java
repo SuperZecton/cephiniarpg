@@ -2,7 +2,7 @@ package org.cephinia.core.abilities;
 
 import org.bukkit.entity.Fireball;
 
-public class fireballSkill {
+public class FireballSkill {
 
     public static void doThrow(Fireball ball, boolean incendiary, Integer yield ) {
         if (ball.getType().toString().equals("FIREBALL")) {

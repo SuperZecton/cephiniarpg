@@ -58,13 +58,13 @@ public class ItemBuilder {
     }
 
 
-    public ItemBuilder data(short data) {
-        stack.setDurability(data);
+    public ItemBuilder data(Number data) {
+        stack.setDurability(data.shortValue());
         return this;
     }
 
-    public ItemBuilder durability(short durability) {
-        stack.setDurability(durability);
+    public ItemBuilder durability(Number durability) {
+        stack.setDurability(durability.shortValue());
         return this;
     }
 
