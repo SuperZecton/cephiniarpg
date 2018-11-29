@@ -1,0 +1,5 @@
+name: CephiniaCore
+version: 1.013
+description: The Core of CephiniaRPG
+main: org.cephinia.core.Main
+author: SuperZecton

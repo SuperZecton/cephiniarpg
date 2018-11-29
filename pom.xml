@@ -7,6 +7,7 @@
     <groupId>org.cephinia</groupId>
     <artifactId>CephiniaCore</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
     <packaging>jar</packaging>
 
     <name>CephiniaCore</name>
@@ -57,6 +58,16 @@
     </repositories>
 
     <dependencies>
+=======
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <!--Spigot API-->
+>>>>>>> parent of 5b3e75f... Review Change
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
@@ -64,5 +75,10 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+<<<<<<< HEAD
 </project>
 
+=======
+
+</project>
+>>>>>>> parent of 5b3e75f... Review Change
